@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mobilestore:
+    image: ${DOCKER_REGISTRY-}mobilestore
+    build:
+      context: .
+      dockerfile: MobileStore/Dockerfile
